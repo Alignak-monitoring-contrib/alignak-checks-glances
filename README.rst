@@ -14,6 +14,16 @@ Documentation
 
 To be completed
 
+Packaging
+----------------------------------------
+
+To build the package:
+
+   - update the package version into `version.py`
+   - run `python setup.py sdist` to build the package
+   - run `python setup.py sdist upload` to upload the package to `PyPI repository <https://pypi.python.org/pypi>`_
+
+
 Bugs, issues and contributing
 ----------------------------------------
 
