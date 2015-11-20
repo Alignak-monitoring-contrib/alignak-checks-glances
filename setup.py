@@ -51,7 +51,7 @@ package = import_module(__pkg_name__)
 
 # Define installation paths
 # Get Alignak root installation directory
-alignak_etc_path = os.path.join(alignak_etc_path, 'arbiter_cfg', 'objects', 'packs', __pkg_name__)
+alignak_etc_path = os.path.join(alignak_etc_path, 'arbiter_cfg', 'objects', 'packs', __checks_type__)
 # Get Alignak libexec directory
 # alignak_libexec_path = os.path.join(alignak_libexec_path, __pkg_name__)
 
@@ -62,13 +62,14 @@ for subdir, dirs, files in os.walk(__pkg_name__):
     if subdir and 'plugins' in subdir:
         for subdir, dirs, files in os.walk(os.path.join(__pkg_name__, 'plugins')):
             for file in files:
-                print 'plugin: ' + file
                 if not file.startswith('__'):
                     plugins_files.append(os.path.join(subdir, file))
     for file in files:
+        if subdir and 'plugins' in subdir:
+            continue
         if not file.startswith('__'):
-            pack_files.append(os.path.join(subdir, file))
-
+            if file not in plugins_files:
+                pack_files.append(os.path.join(subdir, file))
 
 setup(
     name=__pkg_name__,
