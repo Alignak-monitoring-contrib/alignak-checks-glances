@@ -52,9 +52,9 @@ The pack files are to be made available in the monitoring objects configuration 
 
 The proposed structure to build a pack:
 
-- all the checks packs are named as `alignak_checks_PACK`
-- the `PACK` repository is named as `alignak-checks-PACK`*
-- the `PACK` repository includes the following files:
+* all the checks packs are named as `alignak_checks_PACK`
+* the `PACK` repository is named as `alignak-checks-PACK`*
+* the `PACK` repository includes the following files:
 
    * README.rst
    * LICENCE (optional)
@@ -62,9 +62,9 @@ The proposed structure to build a pack:
    * MANIFEST.in
    * setup.py
 
-- the `PACK` repository includes an `alignak_checks_PACK` directory containing the pack files
-- the files in `alignak_checks_PACK` directory will be copied to the Alignak configuration
-- the files in `alignak_checks_PACK/plugins` directory will be copied to the Alignak libexec directory
+* the `PACK` repository includes an `alignak_checks_PACK` directory containing the pack files
+* the files in `alignak_checks_PACK` directory will be copied to the Alignak configuration
+* the files in `alignak_checks_PACK/plugins` directory will be copied to the Alignak libexec directory
 
 
 
