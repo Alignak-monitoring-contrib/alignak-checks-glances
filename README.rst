@@ -56,11 +56,11 @@ The proposed structure to build a pack:
 * the `PACK` repository is named as `alignak-checks-PACK`*
 * the `PACK` repository includes the following files:
 
-   * README.rst
-   * LICENCE (optional)
-   * AUTHORS (optional)
-   * MANIFEST.in
-   * setup.py
+ * README.rst
+ * LICENCE (optional)
+ * AUTHORS (optional)
+ * MANIFEST.in
+ * setup.py
 
 * the `PACK` repository includes an `alignak_checks_PACK` directory containing the pack files
 * the files in `alignak_checks_PACK` directory will be copied to the Alignak configuration
@@ -73,18 +73,18 @@ Building
 
 To build the package:
 
-- update the `pack/__init.py__` and `setup.py` files with all the package information
+* update the `pack/__init.py__` and `setup.py` files with all the package information
 
-   * `setup.py` should not be modified for most of the packs ... if necessary, do it with much care!
-   * `pack/__init.py__` contains all the metadata necessary for the pack
+  * `setup.py` should not be modified for most of the packs ... if necessary, do it with much care!
+  * `pack/__init.py__` contains all the metadata necessary for the pack
 
-- update the `MANIFEST.in` with the package name
+* update the `MANIFEST.in` with the package name
 
-- run `setup.py register` to register the package near PyPI
-- run `setup.py sdist` to build the package
-- run `setup.py install --dry-run` to test the package installation
+* run `setup.py register` to register the package near PyPI
+* run `setup.py sdist` to build the package
+* run `setup.py install --dry-run` to test the package installation
 
-- run `setup.py sdist upload` to upload the package to `PyPI repository <https://pypi.python.org/pypi>`_
+* run `setup.py sdist upload` to upload the package to `PyPI repository <https://pypi.python.org/pypi>`_
 
 Bugs, issues and contributing
 ----------------------------------------
