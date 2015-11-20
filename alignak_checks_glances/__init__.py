@@ -9,10 +9,13 @@
     Alignak - Checks pack for monitoring hosts with Glances
 """
 # Checks types for PyPI keywords
+# Used for:
+# - PyPI keywords
+# - directory where to store files in the Alignak configuration (eg. arbiter_cfg/packs/checks_type)
 __checks_type__ = "glances"
 
 # Application manifest
-__version__ = u"0.1.0"
+__version__ = u"0.1.3"
 __author__ = u"Frédéric MOHIER"
 __author_email__ = "frederic.mohier@gmail.com"
 __copyright__ = u"(c) 2015 - %s" % __author__
