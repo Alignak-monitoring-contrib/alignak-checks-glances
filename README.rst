@@ -3,6 +3,8 @@ Alignak checks package for Glances
 
 Checks pack for monitoring hosts with Glances (tests repository)
 
+**Note**: this package is not currenlty fully functional with Alignak. It needs a refactoring to be used with the Alignak 0.2 and upper ...
+------
 
 Installation
 ----------------------------------------
